@@ -1,0 +1,141 @@
+[2026-05-08T02:34:24Z] === ENRICH ITERATION 2 START | repo=tokio-rs/tracing sha=54ede4d5 ===
+[2026-05-08T02:34:24Z] [iter=2] PHASE START: enrich repo=tokio-rs/tracing sha=54ede4d5 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/54ede4d5-enrich-iter-002.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/54ede4d5d85a536aed5485c5213011d9ec961935.nq.gz
+[2026-05-08T02:34:24Z] [iter=2] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-05-08T02:34:42Z] [iter=2] AST store loaded triples=2409039 load_secs=17 mem_mb=914 MB
+[2026-05-08T02:34:42Z] [iter=2] Step 2: Finding LSP targets mem_mb=914 MB
+[2026-05-08T02:34:47Z] [iter=2] LSP targets found call_sites=19553 imports=412 extends=0 implements=376 secs=5
+[2026-05-08T02:34:51Z] [iter=2] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=914 MB
+[2026-05-08T02:35:04Z] [iter=2] Position index built positions=167659 nodes_with_types=198477 secs=13 mem_mb=914 MB
+[2026-05-08T02:35:04Z] [iter=2] Step 3: Starting LSP resolution mem_mb=914 MB already_completed_types=[] already_completed_files=0
+[2026-05-08T02:35:04Z] [iter=2] Resolving target type target_type=call_site count=19553
+[2026-05-08T02:35:28Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=1.1 files_done=0 resolved=0 errors=0 current=tracing/test-log-support/tests/span_activity_filtered_separately.rs
+[2026-05-08T02:40:20Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=5.9 files_done=2 resolved=166 errors=268 current=tracing-subscriber/src/fmt/format/pretty.rs
+[2026-05-08T02:41:16Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=6.9 files_done=3 resolved=223 errors=326 current=tracing-subscriber/tests/layer_filters/vec.rs
+[2026-05-08T02:43:04Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=8.7 files_done=4 resolved=231 errors=437 current=tracing-subscriber/tests/same_len_filters.rs
+[2026-05-08T02:43:54Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=9.5 files_done=5 resolved=231 errors=489 current=tracing-mock/src/layer.rs
+[2026-05-08T02:44:59Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=10.6 files_done=6 resolved=309 errors=556 current=tracing-appender/src/rolling.rs
+[2026-05-08T02:48:18Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=13.9 files_done=7 resolved=475 errors=761 current=tracing-log/src/lib.rs
+[2026-05-08T02:49:26Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=15.0 files_done=8 resolved=523 errors=829 current=tracing-subscriber/src/filter/env/field.rs
+[2026-05-08T02:50:46Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=16.4 files_done=9 resolved=591 errors=911 current=tracing-subscriber/benches/filter_log.rs
+[2026-05-08T02:52:40Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=18.3 files_done=10 resolved=637 errors=1028 current=tracing-subscriber/tests/option.rs
+[2026-05-08T02:54:08Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=19.7 files_done=11 resolved=680 errors=1120 current=tracing-core/src/subscriber.rs
+[2026-05-08T03:04:23Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=30.0 files_done=13 resolved=781 errors=1760 current=tracing/tests/event.rs
+[2026-05-08T03:10:19Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=35.9 files_done=14 resolved=797 errors=2130 current=tracing/benches/dispatch_get_clone.rs
+[2026-05-08T03:11:00Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=36.6 files_done=17 resolved=854 errors=2172 current=tracing-core/src/field.rs
+[2026-05-08T03:13:21Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=39.0 files_done=18 resolved=961 errors=2320 current=examples/examples/tower-load.rs
+[2026-05-08T03:14:48Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=40.4 files_done=19 resolved=1033 errors=2400 current=tracing-subscriber/tests/layer_filters/trees.rs
+[2026-05-08T03:17:35Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=43.2 files_done=20 resolved=1046 errors=2573 current=tracing-log/benches/logging.rs
+[2026-05-08T03:18:13Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=43.8 files_done=21 resolved=1058 errors=2613 current=tracing-attributes/tests/err.rs
+[2026-05-08T03:22:44Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=48.3 files_done=22 resolved=1062 errors=2895 current=tracing-subscriber/tests/layer_filters/main.rs
+[2026-05-08T03:25:48Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=51.4 files_done=23 resolved=1063 errors=3087 current=tracing/tests/span.rs
+[2026-05-08T03:39:08Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=64.7 files_done=24 resolved=1077 errors=3922 current=tracing/src/instrument.rs
+[2026-05-08T03:39:56Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=65.5 files_done=26 resolved=1108 errors=3972 current=tracing-attributes/src/attr.rs
+[2026-05-08T03:42:22Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=68.0 files_done=27 resolved=1224 errors=4120 current=examples/examples/env-filter-explorer.rs
+[2026-05-08T03:43:25Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=69.0 files_done=28 resolved=1266 errors=4183 current=tracing-attributes/tests/instrument.rs
+[2026-05-08T03:47:16Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=72.9 files_done=29 resolved=1270 errors=4424 current=tracing-subscriber/src/filter/directive.rs
+[2026-05-08T03:48:09Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=73.7 files_done=30 resolved=1325 errors=4479 current=tracing-subscriber/tests/env_filter/per_layer.rs
+[2026-05-08T03:52:15Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=77.8 files_done=31 resolved=1333 errors=4735 current=tracing-subscriber/src/fmt/fmt_layer.rs
+[2026-05-08T03:56:24Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=82.0 files_done=32 resolved=1426 errors=4994 current=tracing/test_static_max_level_features/tests/test.rs
+[2026-05-08T04:10:43Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=96.3 files_done=34 resolved=1426 errors=5882 current=tracing-serde/src/lib.rs
+[2026-05-08T04:11:46Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=97.4 files_done=35 resolved=1478 errors=5947 current=tracing-core/src/callsite.rs
+[2026-05-08T04:12:55Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=98.5 files_done=36 resolved=1513 errors=6017 current=tracing-journald/src/lib.rs
+[2026-05-08T04:14:28Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=100.1 files_done=37 resolved=1568 errors=6113 current=tracing-subscriber/src/layer/mod.rs
+[2026-05-08T04:19:11Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=104.8 files_done=39 resolved=1583 errors=6400 current=tracing-subscriber/tests/layer_filters/filter_scopes.rs
+[2026-05-08T04:21:59Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=107.6 files_done=40 resolved=1592 errors=6574 current=tracing-journald/tests/journal.rs
+[2026-05-08T04:23:24Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=109.0 files_done=41 resolved=1669 errors=6661 current=tracing-subscriber/benches/fmt.rs
+[2026-05-08T04:25:49Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=111.4 files_done=42 resolved=1687 errors=6811 current=tracing-futures/tests/std_future.rs
+[2026-05-08T04:27:39Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=113.2 files_done=43 resolved=1692 errors=6921 current=tracing-subscriber/src/field/debug.rs
+[2026-05-08T04:29:26Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=115.0 files_done=45 resolved=1728 errors=7029 current=tracing-subscriber/src/filter/layer_filters/mod.rs
+[2026-05-08T04:31:19Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=116.9 files_done=46 resolved=1831 errors=7146 current=tracing-log/src/log_tracer.rs
+[2026-05-08T04:34:35Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=120.2 files_done=48 resolved=1961 errors=7349 current=tracing-subscriber/src/filter/targets.rs
+[2026-05-08T04:35:46Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=121.4 files_done=49 resolved=2042 errors=7422 current=tracing-attributes/tests/parents.rs
+[2026-05-08T04:36:50Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=122.4 files_done=50 resolved=2042 errors=7489 current=tracing-subscriber/src/filter/env/mod.rs
+[2026-05-08T04:38:35Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=124.2 files_done=51 resolved=2101 errors=7597 current=tracing-subscriber/src/fmt/format/json.rs
+[2026-05-08T04:41:42Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=127.3 files_done=52 resolved=2202 errors=7792 current=tracing-attributes/tests/async_fn.rs
+[2026-05-08T04:46:36Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=132.2 files_done=53 resolved=2219 errors=8098 current=tracing-subscriber/src/filter/env/directive.rs
+[2026-05-08T04:48:43Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=134.3 files_done=54 resolved=2454 errors=8230 current=tracing-subscriber/src/layer/layered.rs
+[2026-05-08T04:49:25Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=135.0 files_done=55 resolved=2549 errors=8273 current=tracing-futures/src/lib.rs
+[2026-05-08T04:52:35Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=138.2 files_done=56 resolved=2579 errors=8470 current=tracing-mock/src/span.rs
+[2026-05-08T04:53:13Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=138.8 files_done=57 resolved=2628 errors=8510 current=tracing-core/src/event.rs
+[2026-05-08T04:53:46Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=139.4 files_done=59 resolved=2635 errors=8544 current=tracing-mock/tests/span_ancestry.rs
+[2026-05-08T04:58:43Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=144.3 files_done=60 resolved=2635 errors=8853 current=tracing-subscriber/src/registry/stack.rs
+[2026-05-08T05:01:05Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=146.7 files_done=63 resolved=2723 errors=8999 current=tracing-flame/tests/concurrent.rs
+[2026-05-08T05:02:08Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=147.7 files_done=65 resolved=2740 errors=9064 current=tracing-core/src/metadata.rs
+[2026-05-08T05:03:51Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=149.4 files_done=66 resolved=2811 errors=9171 current=tracing-subscriber/src/registry/mod.rs
+[2026-05-08T05:06:03Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=151.7 files_done=68 resolved=2854 errors=9308 current=tracing/tests/instrument.rs
+[2026-05-08T05:06:50Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=152.4 files_done=69 resolved=2859 errors=9356 current=tracing-attributes/tests/destructuring.rs
+[2026-05-08T05:09:08Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=154.7 files_done=70 resolved=2873 errors=9499 current=tracing-mock/src/subscriber.rs
+[2026-05-08T05:10:41Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=156.3 files_done=71 resolved=2987 errors=9595 current=tracing-subscriber/src/reload.rs
+[2026-05-08T05:11:34Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=157.2 files_done=72 resolved=3004 errors=9650 current=tracing-subscriber/tests/ansi_escaping.rs
+[2026-05-08T05:13:11Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=158.8 files_done=73 resolved=3038 errors=9749 current=tracing-error/src/backtrace.rs
+[2026-05-08T05:13:50Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=159.4 files_done=74 resolved=3062 errors=9789 current=tracing-subscriber/src/fmt/time/mod.rs
+[2026-05-08T05:14:32Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=160.1 files_done=76 resolved=3077 errors=9832 current=tracing-subscriber/tests/layer_filters/boxed.rs
+[2026-05-08T05:16:43Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=162.3 files_done=80 resolved=3199 errors=9968 current=tracing/test-log-support/src/lib.rs
+[2026-05-08T05:17:19Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=162.9 files_done=83 resolved=3226 errors=10005 current=tracing-subscriber/benches/filter.rs
+[2026-05-08T05:19:49Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=165.4 files_done=84 resolved=3232 errors=10159 current=tracing-log/tests/log_tracer.rs
+[2026-05-08T05:21:31Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=167.1 files_done=88 resolved=3311 errors=10264 current=tracing/tests/filter_caching_is_lexically_scoped.rs
+[2026-05-08T05:22:43Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=168.3 files_done=90 resolved=3329 errors=10338 current=tracing-mock/tests/event_ancestry.rs
+[2026-05-08T05:27:06Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=172.7 files_done=91 resolved=3329 errors=10608 current=tracing/benches/shared.rs
+[2026-05-08T05:29:32Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=175.1 files_done=93 resolved=3455 errors=10758 current=tracing-core/src/spin/mutex.rs
+[2026-05-08T05:30:42Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=176.3 files_done=97 resolved=3478 errors=10830 current=tracing-subscriber/tests/layer_filters/downcast_raw.rs
+[2026-05-08T05:31:43Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=177.3 files_done=99 resolved=3487 errors=10893 current=tracing-subscriber/tests/field_filter.rs
+[2026-05-08T05:33:18Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=178.9 files_done=100 resolved=3487 errors=10992 current=tracing-subscriber/tests/unhinted_layer_filters_dont_break_other_layers.rs
+[2026-05-08T05:35:00Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=180.6 files_done=101 resolved=3487 errors=11097 current=tracing-flame/src/lib.rs
+[2026-05-08T05:35:34Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=181.2 files_done=102 resolved=3518 errors=11132 current=tracing-subscriber/tests/vec.rs
+[2026-05-08T05:39:15Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=184.8 files_done=105 resolved=3529 errors=11357 current=tracing-attributes/tests/fields.rs
+[2026-05-08T05:41:32Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=187.1 files_done=106 resolved=3530 errors=11496 current=tracing-attributes/tests/follows_from.rs
+[2026-05-08T05:43:07Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=188.7 files_done=107 resolved=3530 errors=11593 current=examples/examples/counters.rs
+[2026-05-08T05:43:39Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=189.2 files_done=108 resolved=3551 errors=11625 current=examples/examples/sloggish/sloggish_subscriber.rs
+[2026-05-08T05:44:13Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=189.8 files_done=109 resolved=3610 errors=11660 current=tracing-subscriber/tests/option_filter_interest_caching.rs
+[2026-05-08T05:46:06Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=191.7 files_done=111 resolved=3622 errors=11777 current=tracing-subscriber/src/filter/layer_filters/combinator.rs
+[2026-05-08T05:46:43Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=192.3 files_done=112 resolved=3674 errors=11815 current=tracing-subscriber/tests/event_enabling.rs
+[2026-05-08T05:47:33Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=193.2 files_done=115 resolved=3715 errors=11866 current=tracing/benches/event.rs
+[2026-05-08T05:48:11Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=193.8 files_done=117 resolved=3733 errors=11905 current=tracing/src/span.rs
+[2026-05-08T05:49:30Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=195.1 files_done=118 resolved=3789 errors=11987 current=tracing/tests/enabled.rs
+[2026-05-08T05:50:25Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=196.0 files_done=120 resolved=3803 errors=12043 current=tracing-subscriber/src/filter/env/builder.rs
+[2026-05-08T05:51:01Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=196.6 files_done=121 resolved=3857 errors=12080 current=tracing-subscriber/tests/vec_subscriber_filter_interests_cached.rs
+[2026-05-08T05:52:11Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=197.8 files_done=122 resolved=3866 errors=12152 current=examples/examples/fmt-compact.rs
+[2026-05-08T05:52:48Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=198.4 files_done=125 resolved=3876 errors=12189 current=tracing-subscriber/src/fmt/time/datetime.rs
+[2026-05-08T05:53:21Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=198.9 files_done=126 resolved=3886 errors=12223 current=tracing-subscriber/src/field/display.rs
+[2026-05-08T05:54:29Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=200.1 files_done=128 resolved=3950 errors=12291 current=tracing/tests/subscriber.rs
+[2026-05-08T05:55:31Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=201.1 files_done=129 resolved=3954 errors=12354 current=examples/examples/inferno-flame.rs
+[2026-05-08T05:56:14Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=201.8 files_done=131 resolved=4017 errors=12397 current=tracing-subscriber/tests/reload.rs
+[2026-05-08T05:56:58Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=202.6 files_done=133 resolved=4056 errors=12443 current=tracing-subscriber/tests/layer_filter_interests_are_cached.rs
+[2026-05-08T05:57:32Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=203.1 files_done=134 resolved=4062 errors=12478 current=tracing/benches/dispatch_get_ref.rs
+[2026-05-08T05:58:15Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=203.8 files_done=137 resolved=4079 errors=12523 current=tracing/tests/filters_are_not_reevaluated_for_the_same_span.rs
+[2026-05-08T05:58:54Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=204.5 files_done=139 resolved=4103 errors=12563 current=examples/examples/sloggish/main.rs
+[2026-05-08T05:59:30Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=205.1 files_done=141 resolved=4109 errors=12600 current=tracing-core/tests/common/mod.rs
+[2026-05-08T06:00:13Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=205.8 files_done=144 resolved=4166 errors=12644 current=tracing-subscriber/tests/utils.rs
+[2026-05-08T06:01:28Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=207.1 files_done=146 resolved=4179 errors=12723 current=tracing-journald/src/socket.rs
+[2026-05-08T06:02:57Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=208.5 files_done=148 resolved=4212 errors=12814 current=tracing-subscriber/src/filter/level.rs
+[2026-05-08T06:03:35Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=209.2 files_done=150 resolved=4227 errors=12854 current=tracing/tests/multiple_max_level_hints.rs
+[2026-05-08T06:04:18Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=209.9 files_done=151 resolved=4231 errors=12898 current=tracing-attributes/src/lib.rs
+[2026-05-08T06:04:48Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=210.4 files_done=154 resolved=4262 errors=12930 current=tracing-subscriber/src/fmt/format/escape.rs
+[2026-05-08T06:05:21Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=211.0 files_done=158 resolved=4318 errors=12964 current=tracing/test-log-support/tests/span_lifecycle_can_be_enabled.rs
+[2026-05-08T06:05:57Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=211.5 files_done=164 resolved=4339 errors=13001 current=tracing-subscriber/tests/layer_filters/per_event.rs
+[2026-05-08T06:06:31Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=212.1 files_done=166 resolved=4343 errors=13036 current=examples/examples/attrs-literal-field-names.rs
+[2026-05-08T06:07:01Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=212.6 files_done=169 resolved=4353 errors=13067 current=tracing/src/lib.rs
+[2026-05-08T06:07:32Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=213.1 files_done=170 resolved=4363 errors=13098 current=tracing/src/field.rs
+[2026-05-08T06:08:16Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=213.9 files_done=176 resolved=4385 errors=13143 current=examples/examples/fmt/yak_shave.rs
+[2026-05-08T06:10:23Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=216.0 files_done=181 resolved=4415 errors=13272 current=tracing-appender/src/sync.rs
+[2026-05-08T06:11:01Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=216.6 files_done=186 resolved=4459 errors=13310 current=tracing-subscriber/tests/registry_with_subscriber.rs
+[2026-05-08T06:11:33Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=217.2 files_done=190 resolved=4464 errors=13343 current=tracing-subscriber/tests/on_register_dispatch_is_called.rs
+[2026-05-08T06:12:07Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=217.7 files_done=197 resolved=4497 errors=13378 current=tracing-subscriber/src/util.rs
+[2026-05-08T06:12:40Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=218.3 files_done=201 resolved=4516 errors=13412 current=tracing-appender/src/rolling/builder.rs
+[2026-05-08T06:13:17Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=218.9 files_done=205 resolved=4529 errors=13450 current=examples/examples/valuable.rs
+[2026-05-08T06:13:47Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=219.4 files_done=209 resolved=4546 errors=13480 current=tracing/test-log-support/tests/log_no_trace.rs
+[2026-05-08T06:14:41Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=220.3 files_done=215 resolved=4595 errors=13536 current=examples/examples/attrs-args.rs
+[2026-05-08T06:15:12Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=220.8 files_done=220 resolved=4606 errors=13568 current=tracing-core/tests/local_dispatch_before_init.rs
+[2026-05-08T06:15:46Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=221.4 files_done=225 resolved=4616 errors=13604 current=examples/examples/appender-multifile.rs
+[2026-05-08T06:16:22Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=222.0 files_done=229 resolved=4621 errors=13641 current=tracing-subscriber/tests/fmt_max_level_hint.rs
+[2026-05-08T06:16:55Z] [iter=2] HEARTBEAT target_type=call_site elapsed_min=222.5 files_done=234 resolved=4622 errors=13675 current=tracing-subscriber/tests/registry_max_level_hint.rs
+[2026-05-08T06:17:22Z] [iter=2] Target type resolved target_type=call_site resolved=4626 errors=13702 secs=13338 mem_mb=914 MB
+[2026-05-08T06:17:22Z] [iter=2] Resolving target type target_type=import_statement count=412
+[2026-05-08T06:17:35Z] [iter=2] HEARTBEAT target_type=import_statement elapsed_min=223.2 files_done=1 resolved=1 errors=0 current=tracing/test-log-support/tests/span_lifecycle_can_be_enabled.rs
+[2026-05-08T06:17:59Z] [iter=2] Target type resolved target_type=import_statement resolved=364 errors=0 secs=36 mem_mb=914 MB
+[2026-05-08T06:17:59Z] [iter=2] Resolving target type target_type=implements_clause count=376
+[2026-05-08T06:18:14Z] [iter=2] HEARTBEAT target_type=implements_clause elapsed_min=223.8 files_done=1 resolved=9 errors=0 current=tracing-subscriber/tests/reload.rs
+[2026-05-08T06:18:23Z] [iter=2] Target type resolved target_type=implements_clause resolved=352 errors=0 secs=25 mem_mb=914 MB
+[2026-05-08T06:19:05Z] [iter=2] Step 5: Writing final enrichment file triples=140348
+[2026-05-08T06:19:08Z] [iter=2] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/54ede4d5d85a536aed5485c5213011d9ec961935.nq.gz size_kb=3206
+[2026-05-08T06:19:08Z] [iter=2] PHASE END: enrich elapsed_s=13483 elapsed_min=224.7 total_triples=140348
