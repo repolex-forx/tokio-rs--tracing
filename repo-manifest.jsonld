@@ -1389,8 +1389,9 @@
     {
       "@id": "https://repolex.ai/r/tokio-rs/tracing/commit/311c31321657ba657ccf63e10bc92a45a079fa2b",
       "git:hexsha": "311c31321657ba657ccf63e10bc92a45a079fa2b",
-      "repolex:parseStatus": "pending",
-      "git:tagName": "tracing-subscriber-0.3.19"
+      "repolex:parseStatus": "parsed",
+      "git:tagName": "tracing-subscriber-0.3.19",
+      "repolex:parsedAt": "2026-05-08T22:21:01.964555+00:00"
     },
     {
       "@id": "https://repolex.ai/r/tokio-rs/tracing/commit/950637daa2b60a95a99f4c88c72708561dc564a2",
